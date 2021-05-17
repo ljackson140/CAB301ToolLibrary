@@ -4,27 +4,26 @@ using System.Text;
 
 namespace cab301Assignment
 {
-    class ToolCollection : iToolCollection
+    public class MemberCollection : iMemberCollection
     {
-        private Tool[] collection;
         public int Number => throw new NotImplementedException();
 
-        public void add(Tool aTool)
+        public void add(Member aMember)
         {
             throw new NotImplementedException();
         }
 
-        public void delete(Tool aTool)
+        public void delete(Member aMember)
         {
             throw new NotImplementedException();
         }
 
-        public bool search(Tool aTool)
+        public bool search(Member aMember)
         {
             throw new NotImplementedException();
         }
 
-        public Tool[] toArray()
+        public Member[] toArray()
         {
             throw new NotImplementedException();
         }

@@ -5,8 +5,12 @@ using System.Text;
 
 namespace cab301Assignment
 {
-    class Member : iMember, IComparable<Member>
+    public class Member : iMember, IComparable<Member>
     {
+        public Member(String fName, String lName, string contactNumber, String Pin)
+        {
+
+        }
         public string FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string ContactNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -14,7 +18,7 @@ namespace cab301Assignment
 
         public string[] Tools => throw new NotImplementedException();
 
-        public void addTool(iTool aTool)
+        public void addTool(Tool aTool)
         {
             throw new NotImplementedException();
         }
@@ -24,7 +28,7 @@ namespace cab301Assignment
             throw new NotImplementedException();
         }
 
-        public void deleteTool(iTool aTool)
+        public void deleteTool(Tool aTool)
         {
             throw new NotImplementedException();
         }
