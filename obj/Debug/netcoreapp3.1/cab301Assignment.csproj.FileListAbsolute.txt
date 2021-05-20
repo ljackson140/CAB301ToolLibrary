@@ -11,3 +11,16 @@ C:\Users\n10493298\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcorea
 C:\Users\n10493298\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.dll
 C:\Users\n10493298\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.pdb
 C:\Users\n10493298\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.genruntimeconfig.cache
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\cab301Assignment.exe
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\cab301Assignment.deps.json
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\cab301Assignment.runtimeconfig.json
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\cab301Assignment.runtimeconfig.dev.json
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\cab301Assignment.dll
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\cab301Assignment.pdb
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.csprojAssemblyReference.cache
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.AssemblyInfoInputs.cache
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.AssemblyInfo.cs
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.csproj.CoreCompileInputs.cache
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.dll
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.pdb
+C:\Users\llaku\Source\Repos\ljackson140\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\cab301Assignment.genruntimeconfig.cache
