@@ -7,16 +7,34 @@ namespace cab301Assignment
 {
     public class Member : iMember, IComparable<Member>
     {
-        public Member(String fName, String lName, string contactNumber, String Pin)
-        {
+        private string fName;
+        private string lName;
+        private string cNumber;
+        private string pIN;
 
+        public string FirstName {
+            get { return fName; }
+            set { fName = value; }
         }
-        public string FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string ContactNumber { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string PIN { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string LastName {
+            get { return lName; }
+            set { lName = value; }
+        }
+        public string ContactNumber {
+            get { return cNumber; }
+            set { cNumber = value; }
+        }
+        public string PIN {
+            get { return pIN; }
+            set { pIN = value; }
+        }
 
-        public string[] Tools => throw new NotImplementedException();
+        Tool[] Tools
+        {
+            get { return tools.toArray(); }
+        }
+
+       
 
         public void addTool(Tool aTool)
         {

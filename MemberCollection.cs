@@ -6,16 +6,25 @@ namespace cab301Assignment
 {
     public class MemberCollection : iMemberCollection
     {
-        public int Number => throw new NotImplementedException();
+        private BinarySearchTree collectionOfMembers = new BinarySearchTree();
+        private int num;
+
+
+        public int Number
+        {
+            get { return num; }
+        }
 
         public void add(Member aMember)
         {
-            throw new NotImplementedException();
+            collectionOfMembers.Insert(aMember);
+            ++num;
         }
 
         public void delete(Member aMember)
         {
-            throw new NotImplementedException();
+            collectionOfMembers.Delete(aMember);
+            --num;
         }
 
         public bool search(Member aMember)

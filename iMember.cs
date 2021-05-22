@@ -31,7 +31,7 @@ namespace cab301Assignment
             set;
         }
 
-        string[] Tools //get a list of tools that this memebr is currently holding
+        Tool[] Tools //get a list of tools that this memebr is currently holding
         {
             get;
         }

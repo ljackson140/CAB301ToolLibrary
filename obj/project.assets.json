@@ -8,25 +8,20 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\llaku\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\n10493298\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\llaku\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\cab301Assignment.csproj",
+      "projectUniqueName": "C:\\Users\\n10493298\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\cab301Assignment.csproj",
       "projectName": "cab301Assignment",
-      "projectPath": "C:\\Users\\llaku\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\cab301Assignment.csproj",
-      "packagesPath": "C:\\Users\\llaku\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\llaku\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\obj\\",
+      "projectPath": "C:\\Users\\n10493298\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\cab301Assignment.csproj",
+      "packagesPath": "C:\\Users\\n10493298\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\n10493298\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\llaku\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\n10493298\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -37,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -48,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -63,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
