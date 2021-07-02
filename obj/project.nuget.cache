@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/zV+0a91lqsIv3Pl2/A2oERGfs7257PXDLgmMDx+WCjaqqa3am66rYyxKtpxbqBpJe9YeUPA8Amw6PwBFz6llQ==",
+  "dgSpecHash": "KgM34lvwb7svr6kOFPk/LLAlX0JBNohTyZ3PNviFFT5aArGcobM/4Um/oufwDjs6XGblaYwngVR7Lmdryyb3Vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\n10493298\\Source\\Repos\\ljackson140\\CAB301ToolLibrary\\cab301Assignment.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\CAB301TOOL_LIBRARY.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\llaku\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\llaku\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
   "logs": []
 }

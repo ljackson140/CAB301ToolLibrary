@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace cab301Assignment
+namespace CAB301TOOL_LIBRARY
 {
     //The specification of Tool ADT
     interface iTool

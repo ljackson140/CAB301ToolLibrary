@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace cab301Assignment
+namespace CAB301TOOL_LIBRARY
 {
     //The specification of Member ADT
     interface iMember
     {
-
+        
         string FirstName  //get and set the first name of this member
         {
             get;
@@ -31,7 +31,7 @@ namespace cab301Assignment
             set;
         }
 
-        Tool[] Tools //get a list of tools that this memebr is currently holding
+        string[] Tools //get a list of tools that this memebr is currently holding
         {
             get;
         }

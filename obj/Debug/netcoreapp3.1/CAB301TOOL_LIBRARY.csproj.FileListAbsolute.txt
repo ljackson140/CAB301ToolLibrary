@@ -1,0 +1,13 @@
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.exe
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.deps.json
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.runtimeconfig.json
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.runtimeconfig.dev.json
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.dll
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\bin\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.pdb
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.csproj.AssemblyReference.cache
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.AssemblyInfoInputs.cache
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.AssemblyInfo.cs
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.csproj.CoreCompileInputs.cache
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.dll
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.pdb
+C:\Users\llaku\RiderProjects\CAB301ToolLibrary\obj\Debug\netcoreapp3.1\CAB301TOOL_LIBRARY.genruntimeconfig.cache

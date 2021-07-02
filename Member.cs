@@ -1,59 +1,138 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using System.Text;
 
-namespace cab301Assignment
+namespace CAB301TOOL_LIBRARY
 {
-    public class Member : iMember, IComparable<Member>
+    class Member : iMember, IComparable<Member>
     {
+        //============================================== private fields ====================================================================
+
+        //Member fields 
         private string fName;
         private string lName;
         private string cNumber;
         private string pIN;
 
-        public string FirstName {
+        //global fields 
+        private string[] tNames;
+        private int nBTools;
+        private ToolCollection toolsBorrowed;
+
+        //============================================== class Constructor ====================================================================
+        public Member(String fName, String lName, string cNumber, String pIN)
+        {
+            toolsBorrowed = new ToolCollection("Borrowed Tools");
+            this.FirstName = fName;
+            this.LastName = lName;
+            this.ContactNumber = cNumber;
+            this.PIN = pIN;
+
+        }
+
+
+        //============================================== property fields ====================================================================
+        public string FirstName
+        {
             get { return fName; }
             set { fName = value; }
         }
-        public string LastName {
+
+        public string LastName
+        {
             get { return lName; }
             set { lName = value; }
         }
-        public string ContactNumber {
+
+        public string ContactNumber
+        {
             get { return cNumber; }
             set { cNumber = value; }
         }
-        public string PIN {
+
+        public string PIN
+        {
             get { return pIN; }
             set { pIN = value; }
         }
-
-        Tool[] Tools
+        public string[] Tools
         {
-            get { return tools.toArray(); }
+            get
+            {
+                tNames = new string[nBTools];
+
+                int j = 0;
+                while(j < toolsBorrowed.toArray().Length)
+                {
+                    if (toolsBorrowed.toArray()[j] != null)
+                    {
+                        tNames[j] = toolsBorrowed.toArray()[j].Name;
+                    }
+                    j++;
+                    break;
+                }
+                return tNames;
+            }
+
         }
+
+
 
        
 
-        public void addTool(Tool aTool)
+        //============================================== Methods ====================================================================
+        private string[] arrResized(string[] arrayOfToolNames)
         {
-            throw new NotImplementedException();
+            string[] outPut = new string[nBTools];
+
+            if (nBTools > arrayOfToolNames.Length)
+            {
+                int j = 0;
+                while (j < arrayOfToolNames.Length)
+                {
+                    tNames[j] = arrayOfToolNames[j];
+                    j++;
+                    break;
+                }
+            }
+            else {
+                outPut = outPut.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+            }
+            return outPut;
         }
 
-        public int CompareTo(Member other)
+
+
+        public void addTool(Tool aTool)
         {
-            throw new NotImplementedException();
+            nBTools++;
+            tNames = arrResized(tNames);
+            toolsBorrowed.add(aTool);
         }
+
+        //comparison of members
+        public int CompareTo(Member user)
+        {
+            if (lName.CompareTo(user.lName) < 0 || lName.CompareTo(user.lName) == 0 && fName.CompareTo(user.fName) < 0) { return -1; }
+            else if (lName.CompareTo(user.lName) == 0 && fName.CompareTo(user.fName) == 0) { return 0; }
+            else { return 1; }
+        }
+
 
         public void deleteTool(Tool aTool)
         {
-            throw new NotImplementedException();
+            nBTools--;
+            tNames = arrResized(tNames);
+            toolsBorrowed.delete(aTool);
         }
+
 
         public override string ToString()
         {
-            return base.ToString();
+            return String.Format("{0, -25}{1, -25} {2, -25}", fName, lName, cNumber);
         }
+
     }
 }

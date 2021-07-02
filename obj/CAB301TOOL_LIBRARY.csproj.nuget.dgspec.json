@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\cab301Assignment.csproj": {}
+    "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\CAB301TOOL_LIBRARY.csproj": {}
   },
   "projects": {
-    "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\cab301Assignment.csproj": {
+    "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\CAB301TOOL_LIBRARY.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\cab301Assignment.csproj",
-        "projectName": "cab301Assignment",
-        "projectPath": "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\cab301Assignment.csproj",
+        "projectUniqueName": "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\CAB301TOOL_LIBRARY.csproj",
+        "projectName": "CAB301TOOL_LIBRARY",
+        "projectPath": "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\CAB301TOOL_LIBRARY.csproj",
         "packagesPath": "C:\\Users\\llaku\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\llaku\\RiderProjects\\CAB301ToolLibrary\\obj\\",
         "projectStyle": "PackageReference",

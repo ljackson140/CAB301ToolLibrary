@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace cab301Assignment
+namespace CAB301TOOL_LIBRARY
 {
     //The specification of MemberCollection ADT, which is used to store and manipulate a collection of members
-
+    
     interface iMemberCollection
     {
         int Number // get the number of members in the community library
@@ -19,6 +19,6 @@ namespace cab301Assignment
 
         Boolean search(Member aMember); //search a given member in this member collection. Return true if this memeber is in the member collection; return false otherwise.
 
-        Member[] toArray(); //output the members in this collection to an array of iMember
+        Member[] toArray(); //output the memebers in this collection to an array of iMember
     }
 }

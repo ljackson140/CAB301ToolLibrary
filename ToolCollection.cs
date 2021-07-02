@@ -2,58 +2,108 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace cab301Assignment
+namespace CAB301TOOL_LIBRARY
 {
-    class ToolCollection : iToolCollection
+     class ToolCollection : iToolCollection
     {
-        private Tool[] collection = new Tool[40];
+        //============================================== private fields ====================================================================
+       
+       
+        private Tool[] tPile;
         private int num;
-        public int Number {
-            get { return num; }
+
+        //identifies type of tool
+        private readonly string idTool;
+        public string Name 
+        { 
+            get { return idTool; } 
+        }
+        public int Number 
+        { 
+            get { return num; } 
+        }
+
+
+        //============================================== class constructor ====================================================================
+        public ToolCollection(string idTool) {
+            tPile = new Tool[num];
+            this.idTool = idTool;
+        }
+
+        //============================================== Methods ====================================================================
+
+
+        private int searchToolPos(Tool aTool) 
+        {
+            int i = 0;
+            while( i < tPile.Length) 
+            {
+                if (tPile[i] != null && tPile[i].Name == aTool.Name)
+                {
+                    return i;
+                }
+                i++;
+                break;
+            }
+            return -1;
+        }
+
+       
+        private Tool[] arrResized(Tool[] arrOfTools) {
+            
+            List<Tool> listools = new List<Tool>();
+            Tool[] arr = new Tool[num];
+
+            if (num > arrOfTools.Length) 
+            {
+                
+                for (int i = 0; i < arrOfTools.Length; i++)
+                {
+                    arr[i] = arrOfTools[i];
+                }
+            }
+            else {
+                foreach (Tool tool in arrOfTools) {
+                    if (tool != null) {
+                        listools.Add(tool);
+                    }
+                }
+                arr = listools.ToArray();
+            }
+            return arr;
+        }
+
+       
+        public void delete(Tool aTool)
+        {
+            int index = searchToolPos(aTool);
+            if (index >=0) 
+                tPile[index] = null;
+                num--; tPile = arrResized(tPile);
+        }
+
+      
+        public bool search(Tool aTool) 
+        {
+            if (searchToolPos(aTool) >= 0) { return true; }
+            return false;
         }
 
         public void add(Tool aTool)
         {
-            for (int i = 0; i < collection.Length; ++i)
-                if (collection[i] == null)
-                {                                                                                 
-                    collection[i] = aTool;
-                    break;
-                }
-            ++num;
-        }
-
-        public void delete(Tool aTool)
-        {
-            for (int i = 0; i < collection.Length; ++i)
-                if (collection[i] == aTool)
+            num++;
+            tPile = arrResized(tPile);
+            for (int i = 0; i < tPile.Length; i++)            
+                if (tPile[i] == null)
                 {
-                    collection[i] = null;
+                    tPile[i] = aTool;
                     break;
                 }
-            --num;
-        }
-
-        public bool search(Tool aTool)
-        {
-            for (int i = 0; i < Number; ++i)
-                if (collection[i].Equals(aTool))
-                    return true;
-            return false;
         }
 
         public Tool[] toArray()
         {
-            Tool[] rArray = new Tool[Number];
-            int tIdx = 0;
-            for (int i = 0; i < collection.Length; ++i)
-                if (collection[i] != null)
-                {
-                    rArray[tIdx] = collection[i];
-                    ++tIdx;
-                }
-            return rArray;
-
+            return tPile;
         }
     }
 }
