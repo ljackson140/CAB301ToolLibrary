@@ -21,17 +21,21 @@ namespace CAB301TOOL_LIBRARY
         private static bool matchedToolName = false; 
         private static ToolCollection[] entireTC = fetchData();
 
-        
-       
+
+
         public static int[] fetchToolID(string nameOfT)
         {
             int entLen = entireTC.Length;
-            for (int n = 0; n < entLen; n++)            
+            for (int n = 0; n < entLen; n++)
+            {
                 for (int m = 0; m < entireTC[n].toArray().Length; m++)
+                {
                     if (entireTC[n].toArray()[m].Name == nameOfT)
                     {
-                        return new int[] { n, m };
-                    }   
+                        return new int[] {n, m};
+                    }
+                }
+            }
             return null;
         }
 
@@ -57,7 +61,8 @@ namespace CAB301TOOL_LIBRARY
         {
             ToolCollection toolsViewed = new ToolCollection("Displayed Tools");
             int all = entireTC.Length;
-            for (int n = 0; n < all; n++)            
+            for (int n = 0; n < all; n++)
+            {
                 if (entireTC[n].Name == aToolType)
                 {
                     for (int m = 0; m < entireTC[n].Number; m++)
@@ -65,8 +70,10 @@ namespace CAB301TOOL_LIBRARY
                         Tool tool = entireTC[n].toArray()[m];
                         toolsViewed.add(tool);
                     }
+
                     break;
                 }
+            }
             return toolsViewed;
         }
 

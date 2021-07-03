@@ -6,64 +6,64 @@ namespace CAB301TOOL_LIBRARY
     {
         public static ToolCollection[] fetchData()
         {
-            var LT = new ToolCollection("Line Trimmers");
-            var LM = new ToolCollection("Lawn Mowers");
-            var GHT = new ToolCollection("Garden Hand Tools");
-            var WB = new ToolCollection("Wheelbarrows");
-            var GPT = new ToolCollection("Garden Power Tools");
-            var S = new ToolCollection("Scrapers");
-            var FL = new ToolCollection("Floor Lasers");
-            var FLT = new ToolCollection("Floor Levelling Tools");
-            var FLM = new ToolCollection("Floor Levelling Materials");
-            var FHT = new ToolCollection("Floor Hand Tools");
-            var TT = new ToolCollection("Tiling Tools");
-            var FHTS = new ToolCollection("Hand Tools");
-            var EL = new ToolCollection("Electric Fencing");
-            var SFT = new ToolCollection("Steel Fencing Tools");
-            var PT = new ToolCollection("Power Tools");
-            var FA = new ToolCollection("Fencing Accessories");
-            var DT = new ToolCollection("Distance Tools");
+            var lt = new ToolCollection("Line Trimmers");
+            var lm = new ToolCollection("Lawn Mowers");
+            var ght = new ToolCollection("Garden Hand Tools");
+            var wb = new ToolCollection("Wheelbarrows");
+            var gpt = new ToolCollection("Garden Power Tools");
+            var s = new ToolCollection("Scrapers");
+            var fl = new ToolCollection("Floor Lasers");
+            var flt = new ToolCollection("Floor Levelling Tools");
+            var flm = new ToolCollection("Floor Levelling Materials");
+            var fht = new ToolCollection("Floor Hand Tools");
+            var tt = new ToolCollection("Tiling Tools");
+            var fhts = new ToolCollection("Hand Tools");
+            var el = new ToolCollection("Electric Fencing");
+            var sft = new ToolCollection("Steel Fencing Tools");
+            var pt = new ToolCollection("Power Tools");
+            var fa = new ToolCollection("Fencing Accessories");
+            var dt = new ToolCollection("Distance Tools");
             var laserM = new ToolCollection("Laser Measurer");
-            var MJ = new ToolCollection("Measuring Jugs");
+            var mj = new ToolCollection("Measuring Jugs");
             var tht = new ToolCollection("Temperature & Humidity Tools");
-            var MLT = new ToolCollection("Levelling Tools");
-            var MKS = new ToolCollection("Markers");
-            var DRAIN = new ToolCollection("Draining");
-            var CC = new ToolCollection("Car Cleaning");
+            var mlt = new ToolCollection("Levelling Tools");
+            var mks = new ToolCollection("Markers");
+            var drain = new ToolCollection("Draining");
+            var cc = new ToolCollection("Car Cleaning");
             var vCuum = new ToolCollection("Vacuum");
-            var PCL = new ToolCollection("Pressure Cleaners");
-            var PC = new ToolCollection("Pool Cleaning");
-            var FCLEAN = new ToolCollection("Floor Cleaning");
-            var STls = new ToolCollection("Sanding Tools");
-            var B = new ToolCollection("Brushes");
-            var R = new ToolCollection("Rollers");
-            var PRTs = new ToolCollection("Paint Removal Tools");
-            var PSS = new ToolCollection("Paint Scrapers");
-            var SPyrs = new ToolCollection("Sprayers");
-            var VT = new ToolCollection("Voltage Tester");
-            var O = new ToolCollection("Oscilloscopes");
-            var Thimage = new ToolCollection("Thermal Imaging");
-            var DTT = new ToolCollection("Data Test Tool");
-            var IT = new ToolCollection("Insulation Testers");
-            var TE = new ToolCollection("Test Equipment");
-            var SE = new ToolCollection("Safety Equipment");
-            var BHT = new ToolCollection("Basic Hand Tools");
-            var CPT = new ToolCollection("Circuit Protection");
-            var CTTs = new ToolCollection("Cable Tools");
-            var J = new ToolCollection("Jacks");
-            var AC = new ToolCollection("Air Compressors");
-            var BCs = new ToolCollection("Battery Chargers");
-            var SOCtls = new ToolCollection("Socket Tools");
-            var BKS = new ToolCollection("Braking");
-            var DTRN = new ToolCollection("Drivetrain");
+            var pcl = new ToolCollection("Pressure Cleaners");
+            var pc = new ToolCollection("Pool Cleaning");
+            var clean = new ToolCollection("Floor Cleaning");
+            var sTls = new ToolCollection("Sanding Tools");
+            var b = new ToolCollection("Brushes");
+            var r = new ToolCollection("Rollers");
+            var prTs = new ToolCollection("Paint Removal Tools");
+            var pss = new ToolCollection("Paint Scrapers");
+            var sPyres = new ToolCollection("Sprayers");
+            var vt = new ToolCollection("Voltage Tester");
+            var o = new ToolCollection("Oscilloscopes");
+            var image = new ToolCollection("Thermal Imaging");
+            var dtt = new ToolCollection("Data Test Tool");
+            var it = new ToolCollection("Insulation Testers");
+            var te = new ToolCollection("Test Equipment");
+            var se = new ToolCollection("Safety Equipment");
+            var bht = new ToolCollection("Basic Hand Tools");
+            var cpt = new ToolCollection("Circuit Protection");
+            var ctTs = new ToolCollection("Cable Tools");
+            var j = new ToolCollection("Jacks");
+            var ac = new ToolCollection("Air Compressors");
+            var bCs = new ToolCollection("Battery Chargers");
+            var soCtls = new ToolCollection("Socket Tools");
+            var bks = new ToolCollection("Braking");
+            var dtrn = new ToolCollection("Drivetrain");
 
             ToolCollection[] entireTC = new ToolCollection[] {
-            LT, LM, GHT, WB, GPT, S, FL,
-            FLT, FLM, FHT, TT, FHTS, EL, SFT,
-            PT, FA, DT, laserM, MJ, tht, MLT,
-            MKS, DRAIN, CC, vCuum, PCL, PC, FCLEAN, STls, B,
-            R, PRTs, PSS, SPyrs, VT, O, Thimage, DTT, IT, TE, SE, BHT,
-            CPT, CTTs, J, AC, BCs, SOCtls, BKS, DTRN };
+            lt, lm, ght, wb, gpt, s, fl,
+            flt, flm, fht, tt, fhts, el, sft,
+            pt, fa, dt, laserM, mj, tht, mlt,
+            mks, drain, cc, vCuum, pcl, pc, clean, sTls, b,
+            r, prTs, pss, sPyres, vt, o, image, dtt, it, te, se, bht,
+            cpt, ctTs, j, ac, bCs, soCtls, bks, dtrn };
 
             return entireTC;
         }
@@ -83,9 +83,13 @@ namespace CAB301TOOL_LIBRARY
 
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5")
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5")
+            {
                 Console.Write("Error! Please select between (1 to 5) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
+            }
+               
 
             if (selection == "1")
             {
@@ -133,10 +137,13 @@ namespace CAB301TOOL_LIBRARY
             Console.WriteLine("\n\nSelect between (1 to 6) or 0 to return to Category menu: ");
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5" && selection != "6")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5" && selection != "6")
+            {
                 Console.Write("Error! Please select between (1 to 6) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
-            
+            }          
+               
 
             if (selection == "1")
             {
@@ -188,9 +195,14 @@ namespace CAB301TOOL_LIBRARY
             string selection = Console.ReadLine();
 
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5")
+            {
                 Console.Write("Error! Please select between (1 to 5) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
+                
+            }     
+                
             
 
 
@@ -239,9 +251,14 @@ namespace CAB301TOOL_LIBRARY
             Console.WriteLine("\n\nSelect between (1 to 6) or 0 to return to Category menu: ");
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5" && selection != "6")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5" && selection != "6")
+            {
                 Console.Write("Error! Please select between (1 to 6) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
+                
+            }       
+               
             
             if (selection == "1")
             {
@@ -293,9 +310,13 @@ namespace CAB301TOOL_LIBRARY
             Console.WriteLine("\n\nSelect between (1 to 6) or 0 to return to Category menu: ");
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5" && selection != "6")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5" && selection != "6")
+            {
                 Console.Write("Error! Please select between (1 to 6) or 0 to return to Category menu: ");
-                selection = Console.ReadLine();            
+                selection = Console.ReadLine();
+            }        
+                          
 
             if (selection == "1")
             {
@@ -346,10 +367,13 @@ namespace CAB301TOOL_LIBRARY
             Console.WriteLine("\n\nSelect between (1 to 6) or 0 to return to Category menu: ");
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5" && selection != "6")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5" && selection != "6")
+            {
                 Console.Write("Error! Please select between (1 to 6) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
-            
+            }        
+                
 
             if (selection == "1")
             {
@@ -399,10 +423,12 @@ namespace CAB301TOOL_LIBRARY
             Console.WriteLine("\n\nSelect between (1 to 5) or 0 to return to Category menu: ");
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5")
+            {
                 Console.Write("Error! Please select between (1 to 5) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
-            
+            }
 
             if (selection == "1")
             {
@@ -449,11 +475,13 @@ namespace CAB301TOOL_LIBRARY
             string selection = Console.ReadLine();
 
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5")
+            {
                 Console.Write("Error! Please select between (1 to 5) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
+            }        
             
-
             if (selection == "1")
             {
                 return "Test Equipment";
@@ -499,9 +527,12 @@ namespace CAB301TOOL_LIBRARY
             Console.WriteLine("\n\nSelect between (1 to 6) or 0 to return to Category menu: ");
             string selection = Console.ReadLine();
 
-            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" && selection != "5" && selection != "6")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5" && selection != "6")
+            {
                 Console.Write("Error! Please select between (1 to 6) or 0 to return to Category menu: ");
                 selection = Console.ReadLine();
+            }
 
             if (selection == "1")
             {
