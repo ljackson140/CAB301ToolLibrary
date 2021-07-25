@@ -63,15 +63,13 @@ namespace CAB301TOOL_LIBRARY
             {
                 tNames = new string[nBTools];
 
-                int j = 0;
-                while(j < toolsBorrowed.toArray().Length)
+                for (int j = 0; j < toolsBorrowed.toArray().Length; j++)
                 {
                     if (toolsBorrowed.toArray()[j] != null)
                     {
                         tNames[j] = toolsBorrowed.toArray()[j].Name;
                     }
-                    j++;
-                    break;
+                    
                 }
                 return tNames;
             }
@@ -83,18 +81,21 @@ namespace CAB301TOOL_LIBRARY
        
 
         //============================================== Methods ====================================================================
+        //*
+        //Resize Array
+        //param arrayOfToolNames
+        //takes a string array
+        //returns new modified array*//
         private string[] arrResized(string[] arrayOfToolNames)
         {
             string[] outPut = new string[nBTools];
 
             if (nBTools > arrayOfToolNames.Length)
             {
-                int j = 0;
-                while (j < arrayOfToolNames.Length)
+                for (int j = 0; j < arrayOfToolNames.Length; j++)
                 {
                     tNames[j] = arrayOfToolNames[j];
-                    j++;
-                    break;
+                    
                 }
             }
             else {

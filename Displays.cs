@@ -129,14 +129,18 @@ namespace CAB301TOOL_LIBRARY
             
             Member[] arrMembers = members.toArray();
 
-            for (int j = 0; j < arrMembers.Length; j++)            
-                if (arrMembers[j] != null && (arrMembers[j].LastName + arrMembers[j].FirstName) == nameOfMember && arrMembers[j].PIN == PIN)
+            for (int j = 0; j < arrMembers.Length; j++)
+            {
+                if (arrMembers[j] != null && (arrMembers[j].LastName + arrMembers[j].FirstName) == nameOfMember &&
+                    arrMembers[j].PIN == PIN)
                 {
                     nameOfMember = arrMembers[j].LastName + arrMembers[j].FirstName;
                     PIN = arrMembers[j].PIN;
                     loggedNverifiedMember = arrMembers[j];
                     return true;
                 }
+            }
+
             return false;
         }
 
@@ -246,23 +250,34 @@ namespace CAB301TOOL_LIBRARY
                     Console.Clear();  MemberMenuScreen();
                     string memSelection = Console.ReadLine();
 
-                    if (memSelection != "0") { RunMemberOptions(memSelection, tSys);
+                    if (memSelection != "0") 
+                    { 
+                        RunMemberOptions(memSelection, tSys);
                     }
-                    else { nameOfMember = ""; BackToMainMenu(tSys); }
+                    else
+                    {
+                        nameOfMember = ""; BackToMainMenu(tSys);
+                    }
 
                 }
-                else {  Console.Write("Incorrect selection! Select between (1 or 2) or 0 to exit: ");  menuselection = Console.ReadLine(); }
+                else 
+                {  
+                    Console.Write("Incorrect selection! Select between (1 or 2) or 0 to exit: ");  
+                    menuselection = Console.ReadLine(); 
+                }
             }
             Environment.Exit(0);
         }
         
         private static string ShowToolTypes(string selection, ToolLibrarySystem sys, string title)
         {
-            while (selection != "2" && selection != "1" && selection != "0" && selection != "3" && selection != "6" && selection != "5" && selection != "4" && selection != "7" && selection != "8" && selection != "9")            
+            while (selection != "0" && selection != "1" && selection != "2" && selection != "3" && selection != "4" &&
+                   selection != "5" && selection != "6" && selection != "7" && selection != "8" && selection != "9")
+            {
                 Console.Write("Error! Please select between (1 to 6) or 0 to return to Staff menu: ");
                 selection = Console.ReadLine();
+            }            
             
-
             if (selection == "1")
             {
                 string typeOfTool = GardenCategoryTools();

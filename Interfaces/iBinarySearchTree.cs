@@ -1,4 +1,10 @@
-﻿using System;
+﻿// File: BTree.cs
+// An implementation of BTree ADT
+// Maolin Tang 
+// 24/3/06
+//Taken from week 5 BST workshop 
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
